@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보</title>
+</head>
+<body>
+    <form action="http://localhost/login.php" method="post" enctype="multipart/form-data">
+        <label for="name">이름 : </label>
+        <input type="text" name="이름" id="name" placeholder="이름을 입력해주세요." autofocus></p>
+        성별 : </p>
+        <table border="0">
+            <tr>
+                <td><input type="radio" name="gender" value="man" id="boy">
+                    <label for="boy">남자</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" value="woman" id="girl">
+                    <label for="girl">여자</label></td>
+            </tr>
+        </table></p>
+        생년월일 <input type="date"></p>
+        휴대전화 번호 <input type="tel" name="phonenumber" pattern="(010)-\d{3,4}-\d{4}"></p>
+        시/도 <select name="지역">
+            <option value="seoul">서울</option>
+            <option value="dajun">대전</option>
+            <option value="degu">대구</option>
+            <option value="busan">부산</option>
+            <option value="jeju">제주도</option>
+        </select></p>
+        상세 주소 : <textarea cols="50" rows="3" name="주소"></textarea></p>
+        이메일 : <input type="email" name="이름"></p>
+        증명 사진 : <input type="file" name="photo"></p>
+        <input type="submit" value="정보입력">
+    </form>
+</body>
+</html>
